@@ -20,7 +20,7 @@ protected/extensions/priceformat/
 Na view correspondente utilize o seguinte código:
 
 ~~~
-$this->widget('ext.priceformat.PriceFormat', array(
+$this->widget('ext.priceformat.IWPriceFormat', array(
 	'model' => $model, 
 	'attribute' => 'nome_do_atributo', 
 	'htmlOptionsPlugin' => array(
@@ -39,7 +39,7 @@ $this->widget('ext.priceformat.PriceFormat', array(
 Caso não use o campo atrelado a um modelo, o uso é correspondente ao código abaixo:
 
 ~~~
-$this->widget('ext.priceformat.PriceFormat', array(
+$this->widget('ext.priceformat.IWPriceFormat', array(
 	'name' => 'nome_do_campo', 
 	'id' => 'id_do_campo', 
 	'htmlOptionsPlugin' => array(
